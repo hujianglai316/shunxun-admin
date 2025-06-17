@@ -97,14 +97,49 @@ export interface ReviewStats {
   }>;
 }
 
-export interface StatsMetric {
-  ORDER_COUNT: 'order_count';
-  ORDER_AMOUNT: 'order_amount';
-  COMMISSION: 'commission';
-  REFUND_COUNT: 'refund_count';
-  REFUND_AMOUNT: 'refund_amount';
-  NEW_CUSTOMER: 'new_customer';
-  REPEAT_CUSTOMER: 'repeat_customer';
-  REVIEW_COUNT: 'review_count';
-  AVERAGE_RATING: 'average_rating';
+export enum StatsMetric {
+  ORDER_COUNT = 'order_count',
+  ORDER_AMOUNT = 'order_amount',
+  COMMISSION = 'commission',
+  REFUND_COUNT = 'refund_count',
+  REFUND_AMOUNT = 'refund_amount',
+  NEW_CUSTOMER = 'new_customer',
+  REPEAT_CUSTOMER = 'repeat_customer',
+  REVIEW_COUNT = 'review_count',
+  AVERAGE_RATING = 'average_rating',
+}
+
+export interface StatsMetricData {
+  value: number;
+  change: number;
+  trend?: Array<{
+    date: string;
+    value: number;
+  }>;
+}
+
+export enum StatsPeriod {
+  TODAY = 'today',
+  YESTERDAY = 'yesterday',
+  WEEK = 'week',
+  MONTH = 'month',
+  QUARTER = 'quarter',
+  YEAR = 'year',
+}
+
+export enum RankingType {
+  ORDER_COUNT = 'order_count',
+  ORDER_AMOUNT = 'order_amount',
+  COMMISSION = 'commission',
+  RATING = 'rating',
+  REVIEW_COUNT = 'review_count',
+}
+
+export interface RankingData {
+  id: number;
+  name: string;
+  value: number;
+  rank: number;
+  change: number;
+  type: RankingType;
 } 
