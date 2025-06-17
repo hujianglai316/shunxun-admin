@@ -1,0 +1,207 @@
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.ml-2 {
+  margin-left: 8px;
+}
+
+.ant-table-cell {
+  .ant-tag {
+    min-width: 60px;
+    text-align: center;
+  }
+}
+
+// 预约详情抽屉样式
+.appointment-detail-drawer {
+  .ant-drawer-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    
+    .ant-drawer-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  
+  .ant-drawer-body {
+    padding: 24px;
+  }
+}
+
+.appointment-detail {
+  .detail-section {
+    margin-bottom: 24px;
+
+    h3 {
+      margin-bottom: 16px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #1f1f1f;
+      position: relative;
+      padding-left: 12px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 16px;
+        background-color: #1890ff;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    .detail-item {
+      display: flex;
+      align-items: flex-start;
+
+      &.full-width {
+        grid-column: span 2;
+      }
+
+      .label {
+        color: #666;
+        margin-right: 8px;
+        flex-shrink: 0;
+        width: 90px;
+      }
+
+      .value {
+        color: #333;
+        font-weight: 500;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  // 预约日志样式
+  .appointment-logs {
+    padding: 0 12px;
+
+    .ant-timeline {
+      .ant-timeline-item {
+        padding-bottom: 20px;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+
+        .ant-timeline-item-content {
+          margin-left: 28px;
+          min-height: auto;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .log-item {
+      .log-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        .operation-type {
+          margin-right: 12px;
+
+          .ant-tag {
+            margin: 0;
+            padding: 2px 8px;
+            font-size: 12px;
+          }
+        }
+
+        .operation-time {
+          color: #999;
+          font-size: 12px;
+        }
+      }
+
+      .log-content {
+        color: #666;
+        font-size: 13px;
+        line-height: 1.6;
+
+        .operation-desc {
+          color: #333;
+          margin-bottom: 4px;
+        }
+
+        .operation-remark {
+          color: #666;
+          margin-bottom: 4px;
+        }
+
+        .operator {
+          color: #999;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .appointment-actions {
+    padding: 0 12px;
+  }
+}
+
+.ant-card {
+  border-radius: 4px;
+  
+  .ant-card-body {
+    padding: 16px;
+  }
+}
+
+.ant-table-wrapper {
+  .ant-table {
+    .ant-table-thead > tr > th {
+      padding: 8px;
+      white-space: nowrap;
+    }
+    
+    .ant-table-tbody > tr > td {
+      padding: 8px;
+    }
+    
+    .ant-table-cell {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.ant-space {
+  gap: 8px !important;
+}
+
+.ant-modal {
+  .ant-modal-content {
+    padding: 20px;
+    
+    .ant-modal-header {
+      margin-bottom: 16px;
+      padding: 0;
+    }
+    
+    .ant-modal-body {
+      padding: 0;
+    }
+
+    .ant-modal-footer {
+      margin-top: 16px;
+      padding: 0;
+    }
+  }
+} 

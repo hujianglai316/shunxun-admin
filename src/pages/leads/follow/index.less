@@ -1,0 +1,59 @@
+.leads-follow {
+  background-color: #fff;
+  min-height: 100%;
+  padding: 24px;
+
+  .lead-info {
+    .text-gray-500 {
+      color: #6b7280;
+    }
+    
+    .grid {
+      display: grid;
+    }
+    
+    .md\:grid-cols-3 {
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    
+    .gap-4 {
+      gap: 1rem;
+    }
+  }
+
+  .follow-up-form {
+    .text-lg {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+    
+    .font-medium {
+      font-weight: 500;
+    }
+    
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .follow-up-history {
+    .timeline-item {
+      margin-bottom: 1.5rem;
+    }
+    
+    .mx-2 {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .text-gray-500 {
+      color: #6b7280;
+    }
+  }
+} 
