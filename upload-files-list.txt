@@ -1,0 +1,34 @@
+📋 需要上传到 GitHub 的关键文件：
+
+📁 根目录文件：
+✅ package.json
+✅ package-lock.json
+✅ vite.config.ts
+✅ tsconfig.json
+✅ tsconfig.node.json
+✅ tailwind.config.js
+✅ index.html
+✅ .gitignore
+
+📁 .github 目录：
+✅ .github/workflows/deploy.yml
+
+📁 src 目录（整个目录）：
+✅ src/
+  ├── layouts/
+  ├── pages/
+  ├── router/
+  ├── types/
+  ├── mock/
+  ├── main.tsx
+  └── index.css
+
+⚠️ 不需要上传的目录：
+❌ node_modules/
+❌ dist/
+❌ .git/
+
+🚀 上传完成后的下一步：
+1. 在 GitHub 仓库设置中启用 GitHub Pages
+2. 选择 "GitHub Actions" 作为部署源
+3. 系统会自动运行部署流程 
